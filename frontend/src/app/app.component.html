@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="custom-control custom-radio">
+    <input type="radio" name="operacion" checked (click)="operacion=1">Suma
+    <br>
+    <input type="radio" name="operacion" (click)="operacion=2">Resta
+    <br>
+    <input type="radio" name="operacion" (click)="operacion=3">Multiplicación
+    <br>
+    <input type="radio" name="operacion" (click)="operacion=4">División
+    <br> Valor 1:
+    <input type="text" class="form-control" [(ngModel)]="valor1"> Valor 2:
+    <input type="text" class="form-control" [(ngModel)]="valor2">
+    <br>
+    <input type="button" (click)="obtenerOperacion()" value="Realizar operación">
+  </div>
+  <router-outlet></router-outlet>
